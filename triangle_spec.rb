@@ -17,6 +17,8 @@ class Triangle
       kind = "equilateral"
    elsif @a==@b && @b!=@c
       kind = "isosceles"
+   elsif @a==@c && @b!=@a
+      kind = "isosceles"
    else 
       kind = "scalene"
    end	
@@ -69,5 +71,23 @@ describe Triangle do
     end
   end
 end
+
+   context "invalid triangle" do
+  
+    context "illegal" do
+     it "" do
+    end
+   end
+
+   context "violates_inequality"do
+    it "" do
+    end
+   end
+   
+   context "impossible_length_side" do
+    it "" do
+   end
+  end   
+ end
 
 end
