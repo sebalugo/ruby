@@ -22,7 +22,6 @@ class Triangle
    else 
       kind = "scalene"
    end	
-  
   end
 
   private
@@ -32,7 +31,7 @@ class Triangle
   end
 
   def equilateral?
-    
+   
   end
 
   def isosceles?
@@ -55,7 +54,7 @@ describe Triangle do
     context "equilateral" do
       it"verify all sides are equal" do
        tri = Triangle.new 2,2,2
-       expect(tri.kind()).to eql("equilateral")
+       expect(tri.kind).to eq("equilateral")
      end
     end
      context "isosceles" do
@@ -75,7 +74,7 @@ end
    context "invalid triangle" do
   
     context "illegal" do
-     it "" do
+     it " " do
     end
    end
 
@@ -86,6 +85,7 @@ end
    
    context "impossible_length_side" do
     it "" do
+     
    end
   end   
  end
